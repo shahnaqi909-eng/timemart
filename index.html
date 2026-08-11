@@ -1,22 +1,353 @@
-<section class="luxury-video">
-    <div class="video-content">
-        <p class="video-label">TIMELESS LUXURY</p>
-        <h2>Discover Luxury Watches</h2>
-        <p>
-            Experience elegance, precision and timeless style
-            with the TimeMart collection.
-        </p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="video-container">
-        <video autoplay muted loop playsinline controls>
-            <source src="videos/luxury-watches.mp4" type="video/mp4">
-            Your browser does not support video playback.
-        </video>
+    <title>TimeMart | Luxury Watches</title>
 
-        <div class="video-overlay">
-            <h3>TIME<span>MART</span></h3>
-            <p>Luxury • Style • Precision</p>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Time<span>Mart</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#watches">Watches</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-btn" onclick="openCart()">
+                🛒 Cart <span id="cart-count">0</span>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="gold-text">TIMELESS LUXURY</p>
+
+            <h1>
+                Discover Your
+                <span>Perfect Time</span>
+            </h1>
+
+            <p>
+                Premium watches designed for people
+                who appreciate elegance, style and precision.
+            </p>
+
+            <a href="#watches" class="shop-btn">
+                Shop Watches →
+            </a>
+
         </div>
+
+    </section>
+
+
+    <!-- LUXURY VIDEO -->
+    <section class="luxury-video">
+
+        <div class="video-content">
+
+            <p class="gold-text">
+                TIMELESS LUXURY
+            </p>
+
+            <h2>
+                Discover Luxury Watches
+            </h2>
+
+            <p>
+                Experience elegance, precision and timeless
+                style with the TimeMart collection.
+            </p>
+
+        </div>
+
+        <div class="video-container">
+
+            <video autoplay muted loop playsinline controls>
+
+                <source
+                    src="videos/luxury-watches.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video playback.
+
+            </video>
+
+            <div class="video-overlay">
+
+                <h3>
+                    TIME<span>MART</span>
+                </h3>
+
+                <p>
+                    Luxury • Style • Precision
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WATCHES -->
+    <section id="watches" class="products-section">
+
+        <div class="section-title">
+
+            <p class="gold-text">
+                OUR COLLECTION
+            </p>
+
+            <h2>
+                Featured Watches
+            </h2>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- WATCH 1 -->
+            <div class="product">
+
+                <div class="watch-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80"
+                        alt="Classic Black Watch"
+                    >
+                </div>
+
+                <h3>
+                    Classic Black
+                </h3>
+
+                <p>
+                    Premium stainless steel watch
+                </p>
+
+                <div class="price">
+                    Rs. 8,999
+                </div>
+
+                <button
+                    onclick="addToCart('Classic Black',8999)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- WATCH 2 -->
+            <div class="product">
+
+                <div class="watch-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80"
+                        alt="Royal Gold Watch"
+                    >
+                </div>
+
+                <h3>
+                    Royal Gold
+                </h3>
+
+                <p>
+                    Elegant gold finish watch
+                </p>
+
+                <div class="price">
+                    Rs. 12,999
+                </div>
+
+                <button
+                    onclick="addToCart('Royal Gold',12999)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- WATCH 3 -->
+            <div class="product">
+
+                <div class="watch-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=800&q=80"
+                        alt="Sport Pro Watch"
+                    >
+                </div>
+
+                <h3>
+                    Sport Pro
+                </h3>
+
+                <p>
+                    Modern watch for active lifestyles
+                </p>
+
+                <div class="price">
+                    Rs. 10,999
+                </div>
+
+                <button
+                    onclick="addToCart('Sport Pro',10999)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- WATCH 4 -->
+            <div class="product">
+
+                <div class="watch-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=80"
+                        alt="Silver Elite Watch"
+                    >
+                </div>
+
+                <h3>
+                    Silver Elite
+                </h3>
+
+                <p>
+                    Minimal silver design
+                </p>
+
+                <div class="price">
+                    Rs. 9,499
+                </div>
+
+                <button
+                    onclick="addToCart('Silver Elite',9499)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <p class="gold-text">
+            ABOUT TIMEMART
+        </p>
+
+        <h2>
+            Time is your greatest luxury.
+        </h2>
+
+        <p>
+            TimeMart brings you stylish and premium watches
+            designed to make every moment special.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <h2>
+            Ready to Find Your Watch?
+        </h2>
+
+        <p>
+            Contact TimeMart to place your order.
+        </p>
+
+        <a
+            href="https://wa.me/923000000000"
+            class="whatsapp"
+        >
+            💬 Order on WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- CART -->
+    <div id="cart-modal" class="cart-modal">
+
+        <div class="cart-box">
+
+            <button
+                class="close"
+                onclick="closeCart()"
+            >
+                ×
+            </button>
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                Total: Rs.
+                <span id="cart-total">0</span>
+            </div>
+
+            <button
+                class="checkout"
+                onclick="checkout()"
+            >
+                Checkout on WhatsApp
+            </button>
+
+        </div>
+
     </div>
-</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            Time<span>Mart</span>
+        </div>
+
+        <p>
+            © 2026 TimeMart. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -180,7 +180,7 @@ function checkout() {
        TO YOUR WHATSAPP NUMBER
     */
 
-    const phone = "923000000000";
+    const phone = "923287173589";
 
 
     window.open(

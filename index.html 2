@@ -1,0 +1,44 @@
+<div class="product-card">
+
+    <div class="product-image">
+        <span class="heart">♡</span>
+
+        <img
+            src="T1374101104100_1_540x"
+            alt="Luxury Watch"
+        >
+    </div>
+
+    <div class="product-info">
+
+        <div class="brand">
+            TIMEMART
+        </div>
+
+        <h3>
+            TimeMart Luxury Watch
+        </h3>
+
+        <p class="model">
+            TM-001 Premium Watch
+        </p>
+
+        <div class="price">
+            <del>Rs. 25,99</del>
+            <strong>Rs. 18,99</strong>
+        </div>
+
+        <p class="gst">
+            inc. GST
+        </p>
+
+        <button
+            onclick="addToCart('TimeMart Luxury Watch',1899)"
+            class="add-cart"
+        >
+            ADD TO CART
+        </button>
+
+    </div>
+
+</div>
